@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+  <html lang="es"></html>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link
+    rel="icon"
+    type="image/png"
+    href="http://localhost:8000/static/images/favicon.png"
+  />
+  <link
+    rel="stylesheet"
+    href="http://localhost:8000/static/stylesheets/spa.css"
+  />
+  <!-- Latest compiled and minified CSS -->
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Inicio</a>
+    <a href="#news">Noticias</a>
+    <a href="#contact">Contacto</a>
+    <a href="javascript:void(0);" class="icon" onclick="openHamburguer()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="container" id="weatherwidget-io">
+    <a
+      class="weatherwidget-io"
+      href="https://forecast7.com/es/n32d76n64d34/alcira/"
+      data-label_1="ALCIRA GIGENA"
+      data-label_2="CLIMA"
+      data-theme="pure"
+      >ALCIRA GIGENA </a
+    >
+  </div>
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img
+        src="http://localhost:8000/static/images/img1.png"
+        style="width: 100%"
+      />
+      <div class="text">Atencion</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img
+        src="http://localhost:8000/static/images/img2.png"
+        style="width: 100%"
+      />
+      <div class="text">Certificados</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img
+        src="http://localhost:8000/static/images/img3.jpg"
+        style="width: 100%"
+      />
+      <div class="text">Historia</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br />
+
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>En stock</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Diesel</th>
+          <th>
+            <div id="diesel">
+              <object data="http://localhost:8000/static/images/stock.svg"></object>
+            </div>           
+          </th>
+        </tr>
+        <tr>
+          <th>Infinia Diesel</th>
+          <th>
+            <div id="inifiaDiesel">
+              <object data="http://localhost:8000/static/images/nostock.svg"></object>             
+            </div>            
+          </th>
+        </tr>
+        <tr>
+          <th>Super</th>
+          <th>
+            <div id="super">
+              <object data="http://localhost:8000/static/images/stock.svg"></object>
+            </div>            
+          </th>
+        </tr>
+        <tr>
+          <th>Infinia</th>
+          <th>
+            <div id="infinia">
+              <object data="http://localhost:8000/static/images/stock.svg"></object>
+            </div>           
+          </th>
+        </tr>
+        <tr>
+          <th>Carga Claro</th>
+          <th>
+            <div id="claro">
+              <object data="http://localhost:8000/static/images/nostock.svg"></object>
+            </div>            
+          </th>
+        </tr>
+        <tr>
+          <th>Hielo</th>
+          <th>
+            <div id="hielo">
+              <object data="http://localhost:8000/static/images/nostock.svg"></object>
+            </div>           
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="http://localhost:8000/static/javascripts/spa.js"></script>
+</body>
